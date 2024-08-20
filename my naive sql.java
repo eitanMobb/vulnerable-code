@@ -11,6 +11,7 @@ public class SQLInjectionExample extends HttpServlet {
         try {
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/db");
             String user = request.getParameter("username");
+            
         } catch (Exception e) {
             throw new ServletException(e);
         }
